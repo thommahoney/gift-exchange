@@ -61,7 +61,7 @@ if DEBUG
   STDOUT.puts "Organizer 2 (#{organizer2}) sees:"
   STDOUT.puts "\t#{org2_contents.join "\n\t"}"
 else
-  File.write("assignments-for-#{organizer1}.txt", org1_contents)
-  File.write("assignments-for-#{organizer2}.txt", org2_contents)
+  File.write("assignments-for-#{organizer1}.txt", org1_contents.join("\n"))
+  File.write("assignments-for-#{organizer2}.txt", org2_contents.join("\n"))
 end
 
